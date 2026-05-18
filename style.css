@@ -314,14 +314,21 @@ h1 span { color: var(--red); display: block; }
 
 .program-content {
   display: grid;
-  grid-template-columns: 1fr minmax(240px, 330px);
+  grid-template-columns: minmax(0, 1fr) 320px;
   gap: 28px;
-  align-items: center;
+  align-items: stretch;
   padding: 32px;
   position: relative;
   z-index: 1;
 }
 
+.program-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.program-main h2,
 .program-content h2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: clamp(2rem, 3vw, 3rem);
@@ -329,52 +336,61 @@ h1 span { color: var(--red); display: block; }
   margin-bottom: 14px;
 }
 
+.program-main p,
 .program-content p {
   color: #333842;
   max-width: 760px;
 }
 
-.program-details {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
+.program-main p + p {
+  margin-top: 12px;
 }
 
-.detail-pill,
-.program-note,
-.spec-box {
+.program-side {
+  align-self: stretch;
   background: var(--cream);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 16px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.detail-pill {
-  color: var(--red);
-  font-weight: 900;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.program-note strong,
-.spec-box strong {
+.program-side strong {
   display: block;
   color: var(--red);
   text-transform: uppercase;
   font-size: .82rem;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   letter-spacing: .08em;
 }
 
-.program-note span,
-.spec-box span {
-  display: block;
+.program-side p {
   color: var(--gray);
   font-size: .94rem;
 }
 
-.spec-box span + span {
-  margin-top: 6px;
+.program-side p + p {
+  margin-top: 8px;
+}
+
+.feature-list-card ul {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.feature-list-card li {
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--red);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 999px;
+  padding: 10px 12px;
+  font-size: .82rem;
 }
 
 .featured-program {
@@ -394,18 +410,38 @@ h1 span { color: var(--red); display: block; }
   color: var(--white);
 }
 
-.dark-note span {
+.dark-note p {
   color: rgba(255,255,255,.72);
+}
+
+.spec-card p {
+  padding-left: 14px;
+  border-left: 3px solid rgba(179,38,42,.28);
+}
+
+.softball-card .program-label {
+  background: #2c1114;
+}
+
+.softball-specs {
+  background: #fff6f8;
 }
 
 .program-extra-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: var(--border);
   border-top: 1px solid var(--border);
   position: relative;
   z-index: 1;
+}
+
+.program-extra-grid.two-up {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.program-extra-grid.three-up {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .program-extra-grid div {
@@ -425,14 +461,6 @@ h1 span { color: var(--red); display: block; }
   font-size: .93rem;
 }
 
-.softball-card .program-label {
-  background: #2c1114;
-}
-
-.softball-specs {
-  background: #fff6f8;
-}
-
 .division-help-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -450,9 +478,14 @@ h1 span { color: var(--red); display: block; }
     grid-template-columns: 1fr;
   }
 
-  .program-extra-grid,
+  .program-extra-grid.two-up,
+  .program-extra-grid.three-up,
   .division-help-grid {
     grid-template-columns: 1fr;
+  }
+
+  .program-side {
+    align-self: auto;
   }
 }
 
@@ -470,6 +503,7 @@ h1 span { color: var(--red); display: block; }
     gap: 22px;
   }
 
+  .program-main h2,
   .program-content h2 {
     font-size: 2.1rem;
   }
