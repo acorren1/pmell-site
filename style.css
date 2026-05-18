@@ -221,3 +221,260 @@ h1 span { color: var(--red); display: block; }
   .hero-card-image { min-height: 260px; }
   .division-card, .why-card { padding: 24px; }
 }
+
+/* Divisions Page */
+.divisions-hero-image {
+  background: linear-gradient(180deg, rgba(0,0,0,.04), rgba(0,0,0,.18)), url('images/pmell-hero.jpg') center/cover no-repeat;
+}
+
+.compact-title {
+  margin-bottom: 26px;
+}
+
+.age-guide-section {
+  padding-bottom: 28px;
+}
+
+.age-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+
+.age-guide-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px 14px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,.05);
+  transition: .18s ease;
+}
+
+.age-guide-card:hover {
+  transform: translateY(-3px);
+  background: #fffaf7;
+}
+
+.age-guide-card strong {
+  display: block;
+  color: var(--red);
+  font-size: .85rem;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.age-guide-card span {
+  display: block;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: .82rem;
+  line-height: 1.2;
+}
+
+.divisions-list-section {
+  padding-top: 38px;
+}
+
+.divisions-list {
+  display: grid;
+  gap: 22px;
+}
+
+.program-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 34px rgba(0,0,0,.07);
+  overflow: hidden;
+  position: relative;
+}
+
+.program-card::after {
+  content: "";
+  position: absolute;
+  right: -48px;
+  bottom: -48px;
+  width: 150px;
+  height: 150px;
+  border: 24px solid rgba(179,38,42,.055);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.program-label {
+  background: var(--black);
+  color: var(--white);
+  padding: 10px 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: .72rem;
+}
+
+.program-content {
+  display: grid;
+  grid-template-columns: 1fr minmax(240px, 330px);
+  gap: 28px;
+  align-items: center;
+  padding: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.program-content h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  letter-spacing: .03em;
+  margin-bottom: 14px;
+}
+
+.program-content p {
+  color: #333842;
+  max-width: 760px;
+}
+
+.program-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.detail-pill,
+.program-note,
+.spec-box {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.detail-pill {
+  color: var(--red);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.program-note strong,
+.spec-box strong {
+  display: block;
+  color: var(--red);
+  text-transform: uppercase;
+  font-size: .82rem;
+  margin-bottom: 8px;
+  letter-spacing: .08em;
+}
+
+.program-note span,
+.spec-box span {
+  display: block;
+  color: var(--gray);
+  font-size: .94rem;
+}
+
+.spec-box span + span {
+  margin-top: 6px;
+}
+
+.featured-program {
+  border: 2px solid rgba(179,38,42,.28);
+}
+
+.featured-program .program-label {
+  background: linear-gradient(90deg, var(--red-deep), var(--red));
+}
+
+.dark-note {
+  background: var(--black);
+  border-color: var(--black);
+}
+
+.dark-note strong {
+  color: var(--white);
+}
+
+.dark-note span {
+  color: rgba(255,255,255,.72);
+}
+
+.program-extra-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border-top: 1px solid var(--border);
+  position: relative;
+  z-index: 1;
+}
+
+.program-extra-grid div {
+  background: #fffaf7;
+  padding: 22px;
+}
+
+.program-extra-grid strong {
+  display: block;
+  text-transform: uppercase;
+  font-size: .86rem;
+  margin-bottom: 7px;
+}
+
+.program-extra-grid span {
+  color: var(--gray);
+  font-size: .93rem;
+}
+
+.softball-card .program-label {
+  background: #2c1114;
+}
+
+.softball-specs {
+  background: #fff6f8;
+}
+
+.division-help-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+@media (max-width: 1080px) {
+  .age-guide-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 940px) {
+  .program-content {
+    grid-template-columns: 1fr;
+  }
+
+  .program-extra-grid,
+  .division-help-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .age-guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .program-label {
+    padding: 10px 20px;
+  }
+
+  .program-content {
+    padding: 26px 22px;
+    gap: 22px;
+  }
+
+  .program-content h2 {
+    font-size: 2.1rem;
+  }
+
+  .program-extra-grid div {
+    padding: 20px;
+  }
+}
