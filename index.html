@@ -34,8 +34,19 @@
     .top-links { display: flex; gap: 18px; align-items: center; font-weight: 700; opacity: 0.94; }
 
     .site-header { background: rgba(255,255,255,.97); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 50; backdrop-filter: blur(10px); }
-    .nav-wrap { min-height: 112px; display: flex; justify-content: space-between; align-items: center; gap: 30px; }
-    .logo-mark { width: 138px; height: 138px; object-fit: contain; margin: -16px 0; }
+    .nav-wrap {
+      min-height: 104px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+    .logo-mark {
+      width: 118px;
+      height: 118px;
+      object-fit: contain;
+      margin: 0;
+    }
     .nav { display: flex; align-items: center; gap: 24px; font-size: .84rem; font-weight: 900; text-transform: uppercase; letter-spacing: .01em; }
     .nav a { position: relative; padding: 10px 0; white-space: nowrap; }
     .nav a:hover, .nav a.active { color: var(--red); }
@@ -115,7 +126,10 @@
 
     .site-footer { background: var(--black); color: var(--white); padding: 44px 0 22px; }
     .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 34px; padding-bottom: 34px; border-bottom: 1px solid rgba(255,255,255,.14); }
-    .footer-logo { width: 112px; margin-bottom: 12px; }
+    .footer-logo {
+      width: 96px;
+      margin-bottom: 12px;
+    }
     .site-footer h3 { color: var(--red); font-size: .95rem; margin-bottom: 14px; }
     .site-footer p, .site-footer li { color: rgba(255,255,255,.78); font-size: .92rem; list-style: none; margin-bottom: 8px; }
     .footer-bottom { padding-top: 18px; display: flex; justify-content: space-between; gap: 20px; color: rgba(255,255,255,.65); font-size: .85rem; }
@@ -305,18 +319,73 @@
 
         <div class="sponsor-marquee" aria-label="Featured sponsors">
           <div class="sponsor-track">
-            <div class="sponsor-card"><strong>Mountain Market</strong><span>Team Sponsor</span></div>
-            <div class="sponsor-card"><strong>Cardinal Auto</strong><span>Field Sponsor</span></div>
-            <div class="sponsor-card"><strong>Pocono Pizza Co.</strong><span>League Sponsor</span></div>
-            <div class="sponsor-card"><strong>Main Street Dental</strong><span>Team Sponsor</span></div>
-            <div class="sponsor-card"><strong>Summit Plumbing</strong><span>Field Sponsor</span></div>
-            <div class="sponsor-card"><strong>East End Deli</strong><span>League Sponsor</span></div>
-            <div class="sponsor-card"><strong>Mountain Market</strong><span>Team Sponsor</span></div>
-            <div class="sponsor-card"><strong>Cardinal Auto</strong><span>Field Sponsor</span></div>
-            <div class="sponsor-card"><strong>Pocono Pizza Co.</strong><span>League Sponsor</span></div>
-            <div class="sponsor-card"><strong>Main Street Dental</strong><span>Team Sponsor</span></div>
-            <div class="sponsor-card"><strong>Summit Plumbing</strong><span>Field Sponsor</span></div>
-            <div class="sponsor-card"><strong>East End Deli</strong><span>League Sponsor</span></div>
+            <div class="sponsor-card"><strong>CheapScapes</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Super Duper Roofing</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>D'Amico's Auto Body Shop</strong><span>Scoreboard Sponsor</span></div>
+            <div class="sponsor-card"><strong>Chester's</strong><span>Sign Sponsor</span></div>
+            <div class="sponsor-card"><strong>Dahlinger Equipment Service</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Chopstix of Tannersville</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Royal Chemical</strong><span>Cash Sponsor</span></div>
+            <div class="sponsor-card"><strong>DC Drywall &amp; Finishing</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Destination Landscaping</strong><span>Sign Sponsor</span></div>
+            <div class="sponsor-card"><strong>Alliance Distributors</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>RM Frantz Inc.</strong><span>Sign Sponsor</span></div>
+            <div class="sponsor-card"><strong>John Cooper Heating &amp; AC</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Xcel Tumbling</strong><span>Sign Sponsor</span></div>
+            <div class="sponsor-card"><strong>Gabels Ice Cream</strong><span>Sponsor</span></div>
+            <div class="sponsor-card"><strong>Competition Service Center</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>ESSA</strong><span>Sign Sponsor</span></div>
+            <div class="sponsor-card"><strong>Country Side Cottages</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Critical Systems Generator Services</strong><span>Sponsor</span></div>
+            <div class="sponsor-card"><strong>Blackwing Jujitsu and MMA</strong><span>Sign Sponsor</span></div>
+            <div class="sponsor-card"><strong>Protega</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Mid Atlantic CPA's</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Nick's Big Belly Deli</strong><span>Sign &amp; Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Beth Moloughney - State Farm</strong><span>Sign &amp; Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Big Screen Escapes</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Muldoon's Towing</strong><span>Sign &amp; Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Zoom in Sports Photography</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Pocono Athletics</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Roy Clark Trucking</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Aspen Pest Control</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Ace Hardware Home Services</strong><span>Cash Sponsor</span></div>
+            <div class="sponsor-card"><strong>Kramer Sheds</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Knights of Columbus</strong><span>Sign Sponsor</span></div>
+            <div class="sponsor-card"><strong>Mountain Landscaping</strong><span>Sign &amp; Team Sponsor</span></div>
+
+            <div class="sponsor-card"><strong>CheapScapes</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Super Duper Roofing</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>D'Amico's Auto Body Shop</strong><span>Scoreboard Sponsor</span></div>
+            <div class="sponsor-card"><strong>Chester's</strong><span>Sign Sponsor</span></div>
+            <div class="sponsor-card"><strong>Dahlinger Equipment Service</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Chopstix of Tannersville</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Royal Chemical</strong><span>Cash Sponsor</span></div>
+            <div class="sponsor-card"><strong>DC Drywall &amp; Finishing</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Destination Landscaping</strong><span>Sign Sponsor</span></div>
+            <div class="sponsor-card"><strong>Alliance Distributors</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>RM Frantz Inc.</strong><span>Sign Sponsor</span></div>
+            <div class="sponsor-card"><strong>John Cooper Heating &amp; AC</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Xcel Tumbling</strong><span>Sign Sponsor</span></div>
+            <div class="sponsor-card"><strong>Gabels Ice Cream</strong><span>Sponsor</span></div>
+            <div class="sponsor-card"><strong>Competition Service Center</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>ESSA</strong><span>Sign Sponsor</span></div>
+            <div class="sponsor-card"><strong>Country Side Cottages</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Critical Systems Generator Services</strong><span>Sponsor</span></div>
+            <div class="sponsor-card"><strong>Blackwing Jujitsu and MMA</strong><span>Sign Sponsor</span></div>
+            <div class="sponsor-card"><strong>Protega</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Mid Atlantic CPA's</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Nick's Big Belly Deli</strong><span>Sign &amp; Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Beth Moloughney - State Farm</strong><span>Sign &amp; Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Big Screen Escapes</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Muldoon's Towing</strong><span>Sign &amp; Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Zoom in Sports Photography</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Pocono Athletics</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Roy Clark Trucking</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Aspen Pest Control</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Ace Hardware Home Services</strong><span>Cash Sponsor</span></div>
+            <div class="sponsor-card"><strong>Kramer Sheds</strong><span>Team Sponsor</span></div>
+            <div class="sponsor-card"><strong>Knights of Columbus</strong><span>Sign Sponsor</span></div>
+            <div class="sponsor-card"><strong>Mountain Landscaping</strong><span>Sign &amp; Team Sponsor</span></div>
           </div>
         </div>
       </div>
