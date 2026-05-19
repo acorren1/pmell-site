@@ -1307,13 +1307,12 @@ body:not(.home-page) .hero-card-image {
 body:not(.home-page) .hero-card-image::before {
   content: "";
   position: absolute;
-  left: -18px;
-  top: 42px;
-  width: 6px;
-  height: calc(100% - 84px);
-  background: var(--red);
-  border-radius: 999px;
-  opacity: 0.9;
+  left: -70px;
+  top: 40px;
+  width: 180px;
+  height: 420px;
+  background: rgba(179, 38, 42, 0.08);
+  clip-path: polygon(100% 0%, 35% 50%, 100% 100%, 0 100%, 0 0);
   z-index: -1;
 }
 
