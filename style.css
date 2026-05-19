@@ -1205,3 +1205,52 @@ h1 span { color: var(--red); display: block; }
     grid-template-columns: 1fr;
   }
 }
+
+/* Global PMELL watermark refinement */
+.hero-card-image,
+.featured-event-card,
+.new-parent-card,
+.program-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-card-image::after,
+.featured-event-card::after,
+.new-parent-card::after,
+.program-card::after {
+  content: "PMELL";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  width: 100%;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: clamp(4rem, 12vw, 11rem);
+  line-height: 1;
+  letter-spacing: 0.08em;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Dark image sections */
+.hero-card-image::after {
+  color: rgba(255, 255, 255, 0.08);
+}
+
+/* Light cards */
+.featured-event-card::after,
+.new-parent-card::after,
+.program-card::after {
+  color: rgba(179, 38, 42, 0.02);
+}
+
+/* Keep actual content above watermark */
+.hero-card-image > *,
+.featured-event-card > *,
+.new-parent-card > *,
+.program-card > * {
+  position: relative;
+  z-index: 1;
+}
