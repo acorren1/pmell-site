@@ -1219,3 +1219,62 @@ h1 span { color: var(--red); display: block; }
   content: none !important;
   display: none !important;
 }
+
+/* Standardize interior page hero layout */
+.page-hero-grid {
+  min-height: 620px;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  align-items: center;
+  gap: 72px;
+  padding: 72px 0;
+}
+
+.page-hero h1 {
+  max-width: 560px;
+}
+
+.page-hero p {
+  max-width: 600px;
+}
+
+.hero-card-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  min-height: auto;
+  max-height: 430px;
+  align-self: center;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Make subpage hero buttons consistent */
+.page-hero .hero-actions {
+  margin-top: 4px;
+}
+
+/* Mobile consistency */
+@media (max-width: 940px) {
+  .page-hero-grid {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 34px;
+    padding: 54px 0;
+  }
+
+  .hero-card-image {
+    aspect-ratio: 16 / 9;
+    max-height: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .page-hero-grid {
+    padding: 42px 0;
+    gap: 28px;
+  }
+
+  .hero-card-image {
+    aspect-ratio: 4 / 3;
+  }
+}
