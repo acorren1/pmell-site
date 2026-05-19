@@ -86,6 +86,10 @@ h1 span { color: var(--red); display: block; }
 .home-about-image {
   background-image: url('images/pmell-float.jpg');
 }
+.about-mission-image {
+  background-image: url('images/pmell-about-base.jpeg');
+  background-position: 70% center;
+}
 .split-image::after { content: "PMELL"; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: clamp(3rem,7vw,7rem); color: rgba(255,255,255,.18); letter-spacing: .08em; text-shadow: 0 6px 18px rgba(0,0,0,.2); }
 
 .updates-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
