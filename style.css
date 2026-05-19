@@ -63,7 +63,7 @@ h1 span { color: var(--red); display: block; }
 .hero-copy::after { content: "HOME OF THE CARDINALS"; position: absolute; left: 0; bottom: 34px; font-weight: 900; font-size: .72rem; letter-spacing: .18em; color: rgba(0,0,0,.14); }
 .hero-copy p:not(.eyebrow) { font-size: 1.1rem; max-width: 510px; color: #30343a; margin-bottom: 28px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
-.hero-image { min-height: 590px; background: linear-gradient(90deg, rgba(0,0,0,.05), rgba(0,0,0,.06)), url('images/pmell-hero.jpg') center/cover no-repeat; position: relative; }
+.hero-image { min-height: 590px; background: linear-gradient(90deg, rgba(0,0,0,.05), rgba(0,0,0,.06)), url('images/pmell-hero-new.jpg') center/cover no-repeat; position: relative; }
 .hero-image::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 58%, rgba(0,0,0,.22)); }
 
 .alert-strip { background: linear-gradient(90deg, var(--red-dark), var(--red)); color: var(--white); padding: 18px 0; font-weight: 900; text-transform: uppercase; }
