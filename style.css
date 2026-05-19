@@ -1278,3 +1278,56 @@ h1 span { color: var(--red); display: block; }
     aspect-ratio: 4 / 3;
   }
 }
+
+/* Force consistent subpage hero layout */
+body:not(.home-page) .page-hero-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  align-items: center !important;
+  gap: 72px !important;
+  min-height: 620px !important;
+  padding: 72px 0 !important;
+}
+
+body:not(.home-page) .page-hero h1 {
+  max-width: 560px !important;
+}
+
+body:not(.home-page) .page-hero p {
+  max-width: 600px !important;
+}
+
+body:not(.home-page) .hero-card-image {
+  width: 100% !important;
+  height: 430px !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  align-self: center !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+@media (max-width: 940px) {
+  body:not(.home-page) .page-hero-grid {
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+    gap: 34px !important;
+    padding: 54px 0 !important;
+  }
+
+  body:not(.home-page) .hero-card-image {
+    height: 340px !important;
+  }
+}
+
+@media (max-width: 620px) {
+  body:not(.home-page) .page-hero-grid {
+    padding: 42px 0 !important;
+    gap: 28px !important;
+  }
+
+  body:not(.home-page) .hero-card-image {
+    height: 260px !important;
+  }
+}
