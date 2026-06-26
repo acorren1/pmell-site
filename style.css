@@ -1522,3 +1522,133 @@ body:not(.home-page) .hero-card-image {
     grid-template-columns: 1fr;
   }
 }
+
+/* Contact Page */
+.contact-strip .panel-1 {
+  background-image: url('images/pmell-about-bat.jpg');
+  background-position: center;
+}
+
+.contact-strip .panel-2 {
+  background-image: url('images/pmell-about-cleanup.jpg');
+  background-position: center;
+}
+
+.contact-strip .panel-3 {
+  background-image: url('images/pmell-float.jpg');
+  background-position: center;
+}
+
+.contact-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.contact-info-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: 0 10px 28px rgba(0,0,0,.06);
+}
+
+.contact-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  background: rgba(179,38,42,.08);
+  border-radius: 16px;
+  font-size: 1.45rem;
+  margin-bottom: 18px;
+}
+
+.contact-info-card h2,
+.map-copy h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: clamp(1.8rem, 2.7vw, 2.8rem);
+  letter-spacing: .03em;
+  margin-bottom: 14px;
+}
+
+.contact-info-card p {
+  color: var(--gray);
+  margin-bottom: 14px;
+}
+
+.social-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.social-link-row .btn {
+  padding: 12px 16px;
+  font-size: .78rem;
+}
+
+.map-section {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.map-card {
+  display: grid;
+  grid-template-columns: .7fr 1.3fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.map-copy {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 34px;
+  box-shadow: 0 10px 28px rgba(0,0,0,.05);
+}
+
+.map-copy p {
+  color: var(--gray);
+}
+
+.map-embed {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  min-height: 360px;
+}
+
+.map-embed iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 940px) {
+  .contact-card-grid,
+  .map-card {
+    grid-template-columns: 1fr;
+  }
+
+  .map-embed,
+  .map-embed iframe {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 620px) {
+  .contact-info-card,
+  .map-copy {
+    padding: 24px;
+  }
+
+  .social-link-row .btn {
+    width: 100%;
+  }
+}
