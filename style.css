@@ -1404,3 +1404,121 @@ body:not(.home-page) .hero-card-image {
     justify-self: stretch;
   }
 }
+
+/* Sponsors Page */
+.sponsors-strip .panel-1 {
+  background-image: url('images/pmell-about-softball.JPG');
+  background-position: center;
+}
+
+.sponsors-strip .panel-2 {
+  background-image: url('images/pmell-float.jpg');
+  background-position: center;
+}
+
+.sponsors-strip .panel-3 {
+  background-image: url('images/pmell-about-bat.jpg');
+  background-position: center;
+}
+
+.sponsor-level-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.sponsor-level-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: 0 10px 28px rgba(0,0,0,.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.sponsor-level-card h3 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+  letter-spacing: .03em;
+  margin-bottom: 14px;
+}
+
+.sponsor-level-card p {
+  color: var(--gray);
+  margin-bottom: 20px;
+}
+
+.sponsor-level-card span {
+  display: inline-flex;
+  color: var(--red);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: .78rem;
+  letter-spacing: .08em;
+  background: rgba(179,38,42,.08);
+  padding: 9px 12px;
+  border-radius: 999px;
+}
+
+.featured-sponsor-level {
+  background: linear-gradient(180deg, var(--red-deep), var(--red));
+  color: var(--white);
+}
+
+.featured-sponsor-level p {
+  color: rgba(255,255,255,.82);
+}
+
+.featured-sponsor-level span {
+  background: rgba(255,255,255,.14);
+  color: var(--white);
+}
+
+.sponsor-directory-section {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.sponsor-directory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.sponsor-directory-card {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  min-height: 130px;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  box-shadow: 0 8px 22px rgba(0,0,0,.05);
+}
+
+.sponsor-directory-card strong {
+  display: block;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-size: 1.05rem;
+}
+
+.sponsor-directory-card span {
+  display: block;
+  color: var(--red);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: .72rem;
+  letter-spacing: .08em;
+  margin-top: 8px;
+}
+
+@media (max-width: 940px) {
+  .sponsor-level-grid,
+  .sponsor-directory-grid {
+    grid-template-columns: 1fr;
+  }
+}
